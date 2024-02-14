@@ -1,0 +1,176 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(image/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+.logo span {
+    color: var(--color-primary);
+}
+
+.menu-bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+
+    position: relative;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+
+    position: relative;
+}
+
+.menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    color: var(--color-primary);
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 120vh;
+    margin-top: 50px;
+    background-position: center;
+    background-size: cover;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-sizing: border-box;
+}
+
+.motdudirecteur {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.directeur {}
+
+h2 {
+    color: #164c9d;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #0073ff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: #1d0749;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.réalisations {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    margin-top: 500px;
+
+}
+
+.réaliser {}
+
+/*couleur du mot avis*/
+.my-custom-color {
+    color: #0073ff;
+}
+
+.contact {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+
+/*les 3 photos dans accueil*/
+.vvv {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    padding: 25px;
+    margin-bottom: -230px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+@media screen and (max-width: 580px) {
+    .motdudirecteur {
+        display: block;
+    }
+}
